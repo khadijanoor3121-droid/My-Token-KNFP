@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KNFP Coin — Official</title>
+  <meta name="description" content="Official info page for KNFP Coin on BNB Smart Chain." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D1321'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231A2A6C'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='26' font-family='Arial, Helvetica, sans-serif' fill='%23fff' font-weight='700'%3EK%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121836; --muted:#92a1b3; --brand:#7cf5ff; --brand2:#00d4ff; --ok:#1ad1a5; --warn:#ffd166;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto; background: radial-gradient(1200px 600px at 15% 10%, #101945 0%, #0b1020 60%); color:#e8eef6}
+    a{color:var(--brand2);text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px}
+    header{display:flex;align-items:center;gap:14px;padding:14px 0}
+    .logo{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#0d1321}
+    .logo svg{width:28px;height:28px}
+    .title{font-weight:800;font-size:20px;letter-spacing:.4px}
+    .pill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);color:#cfe7ff;border:1px solid rgba(255,255,255,.08)}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); border:1px solid rgba(255,255,255,.12); border-radius:18px; padding:22px; box-shadow:0 10px 40px rgba(0,0,0,.35)}
+h1{font-size:36px;margin:10px 0 8px}
+p{color:var(--muted);line-height:1.65}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#14204d;color:#eaf7ff;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#00111a}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+.kvs{display:grid;grid-template-columns:.9fr 1.1fr; gap:18px}
+@media (max-width:900px){.kvs{grid-template-columns:1fr}}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}
+.tag{display:inline-block;padding:6px 10px;border:1px dashed rgba(255,255,255,.22);border-radius:10px;margin:4px 6px 0 0;color:#c7d6ea}
+
+footer{margin:28px 0 16px;color:#9fb2c8;text-align:center}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);margin:28px 0}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#0D1321"/><circle cx="32" cy="32" r="22" fill="#1A2A6C"/><text x="50%" y="56%" text-anchor="middle" font-size="26" font-family="Arial" fill="#fff" font-weight="700">K</text></svg>
+      </div>
+      <div class="title">KNFP Coin <span class="pill">BNB Smart Chain</span></div>
+      <div style="flex:1"></div>
+      <a class="pill" href="#contact">Contact</a>
+    </header><section class="hero">
+  <div class="card">
+    <h1>Future‑ready Payments with <span style="background:linear-gradient(90deg,#7cf5ff,#00d4ff);-webkit-background-clip:text;background-clip:text;color:transparent">KNFP</span></h1>
+    <p>
+      KNFP (Khadija Noor Future Pay) ایک community‑driven utility token ہے۔ مقصد:
+      low‑fee payments, community rewards اور long‑term growth.
+    </p>
+    <div class="btns">
+      <a class="btn primary" id="buyBtn" target="_blank" rel="noopener">Buy on PancakeSwap</a>
+      <a class="btn" id="scanBtn" target="_blank" rel="noopener">View on BscScan</a>
+    </div>
+    <div style="margin-top:14px;font-size:14px;color:#9fb2c8">
+      Contract Address:
+      <div class="mono" id="contract">0xd5afac807749fa878987bf3c647124e23601158e</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3 style="margin:0 0 6px">Tokenomics</h3>
+    <p style="margin-top:0">Fair‑launch style supply with simple fees.</p>
+    <div class="grid">
+      <div class="card" style="padding:14px">
+        <div style="font-size:28px;font-weight:800">1,000,000</div>
+        <div class="muted">Total Supply (KNFP)</div>
+      </div>
+      <div class="card" style="padding:14px">
+        <div style="font-size:28px;font-weight:800">0%/0%</div>
+        <div class="muted">Buy/Sell Tax*</div>
+      </div>
+      <div class="card" style="padding:14px">
+        <div style="font-size:28px;font-weight:800">LP</div>
+        <div class="muted">BNB‑KNFP Liquidity</div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:#9fb2c8;margin-top:10px">*If your live contract has different fees, update this text.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="kvs">
+  <div class="card">
+    <h3>About KNFP</h3>
+    <p>
+      KNFP کا ویژن آسان، تیز اور کم فیس پر digital payments کو عام کرنا ہے۔
+      Project community transparency پر یقین رکھتا ہے—contract اور liquidity
+      details نیچے دئیے گئے links سے دیکھیں۔
+    </p>
+    <div>
+      <span class="tag">Utility Token</span>
+      <span class="tag">Community First</span>
+      <span class="tag">BNB Chain</span>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Roadmap (Lite)</h3>
+    <ul>
+      <li>Q1: Website + BscScan updates</li>
+      <li>Q2: Community airdrops & partnerships</li>
+      <li>Q3: Merchant payment pilot</li>
+      <li>Q4: Governance & staking ideas (research)</li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="card" id="faq">
+  <h3>FAQ</h3>
+  <p><strong>Which chain?</strong> BNB Smart Chain (BEP‑20).</p>
+  <p><strong>How to buy?</strong> PancakeSwap پر swap میں token address paste کریں یا اوپر Buy button دبائیں۔</p>
+  <p><strong>Is this financial advice?</strong> نہیں۔ Crypto high‑risk ہے، ہمیشہ اپنی تحقیق کریں (DYOR).</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="card" id="contact">
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:khadijanoor3121@gmail.com">khadijanoor3121@gmail.com</a></p>
+  <p>Socials:
+    <a href="#" target="_blank" rel="noopener">Twitter</a> ·
+    <a href="#" target="_blank" rel="noopener">Telegram</a>
+  </p>
+</section>
+
+<footer>
+  © <span id="year"></span> KNFP Coin — Community project. Not financial advice.
+</footer>
+
+  </div>  <script>
+    const CONTRACT = '0xd5afac807749fa878987bf3c647124e23601158e';
+    document.getElementById('contract').textContent = CONTRACT;
+    document.getElementById('buyBtn').href = `https://pancakeswap.finance/swap?outputCurrency=${CONTRACT}`;
+    document.getElementById('scanBtn').href = `https://bscscan.com/token/${CONTRACT}`;
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
